@@ -25,6 +25,7 @@ const config: QuartzConfig = {
       height: 630, // height to generate with (in pixels)
       excludeRoot: false, // wether to exclude "/" index path to be excluded from auto generated images (false = use auto, true = use default og image)
     },
+    socialDescription: "",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,

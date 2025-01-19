@@ -134,21 +134,23 @@ export default (() => {
     const useDefaultOgImage = fileName === undefined || !cfg.generateSocialImages
 
     // Path to og/social image (priority: frontmatter > generated image (if enabled) > default image)
-    let ogImagePath = useDefaultOgImage ? ogImageDefaultPath : ogImageGeneratedPath
+    // let ogImagePath = useDefaultOgImage ? ogImageDefaultPath : ogImageGeneratedPath
 
     // TODO: could be improved to support external images in the future
     // Aliases for image and cover handled in `frontmatter.ts`
     const frontmatterImgUrl = fileData.frontmatter?.socialImage
 
     // Override with default og image if config option is set
-    if (fileData.slug === "index") {
-      ogImagePath = ogImageDefaultPath
-    }
+    // if (fileData.slug === "index") {
+    //   ogImagePath = ogImageDefaultPath
+    // }
 
-    // Override with frontmatter url if existing
-    if (frontmatterImgUrl) {
-      ogImagePath = `https://${cfg.baseUrl}/static/${frontmatterImgUrl}`
-    }
+    // // Override with frontmatter url if existing
+    // if (frontmatterImgUrl) {
+    //   ogImagePath = `https://${cfg.baseUrl}/static/${frontmatterImgUrl}`
+    // }
+
+    const ogImagePath = `https://zk-tokyo.github.io/static/og.png`
 
     // Url of current page
     const socialUrl =

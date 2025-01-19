@@ -19,7 +19,7 @@ const config: QuartzConfig = {
     baseUrl: "https://zk-tokyo.github.io/home/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-    generateSocialImages: false,
+    generateSocialImages: true,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,

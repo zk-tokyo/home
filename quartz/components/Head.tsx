@@ -150,7 +150,7 @@ export default (() => {
     //   ogImagePath = `https://${cfg.baseUrl}/static/${frontmatterImgUrl}`
     // }
 
-    const ogImagePath = `https://zk-tokyo.github.io/static/og.png`
+    const ogImagePath = `https://zk-tokyo.github.io/home/static/og.png`
 
     // Url of current page
     const socialUrl =

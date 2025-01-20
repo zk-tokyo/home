@@ -173,9 +173,9 @@ export default (() => {
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
         <meta property="og:title" content={title} />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
+        {/* <meta name="twitter:card" content="summary_large_image" /> */}
+        {/* <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} /> */}
         <meta property="og:description" content={description} />
         <meta property="og:image:type" content={`image/${extension}`} />
         <meta property="og:image:alt" content={description} />
@@ -191,9 +191,9 @@ export default (() => {
           <>
             <meta name="twitter:image" content={ogImagePath} />
             <meta property="og:image" content={ogImagePath} />
-            <meta property="twitter:domain" content={cfg.baseUrl}></meta>
+            {/* <meta property="twitter:domain" content={cfg.baseUrl}></meta> */}
             <meta property="og:url" content={socialUrl}></meta>
-            <meta property="twitter:url" content={socialUrl}></meta>
+            {/* <meta property="twitter:url" content={socialUrl}></meta> */}
           </>
         )}
         <link rel="icon" href={iconPath} />
